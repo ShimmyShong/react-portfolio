@@ -1,11 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
-    return (
-        <div className="">
-            <placeholder />
-        </div>
-    );
+  return (
+    <PortfolioContainer />
+  );
 }
 
 export default App;
