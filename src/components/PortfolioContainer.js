@@ -19,7 +19,7 @@ export default function PortfolioContainer() {
         else if (currentPage === 'Portfolio') {
             return <Portfolio />
         }
-        else {
+        else if (currentPage === 'Resume') {
             return <Resume />
         }
     }

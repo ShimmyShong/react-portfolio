@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../styles/Body.css'
 
 export default function Resume() {
     return (
-        <div>
-            <h1>Resume</h1>
-            <p>
+        <div className='container'>
+            <h1 className='title'>Resume</h1>
+            <p className='description'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
                 velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
                 ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras

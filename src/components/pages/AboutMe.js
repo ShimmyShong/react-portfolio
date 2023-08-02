@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../styles/Body.css'
 
 export default function AboutMe() {
     return (
-        <div>
-            <h1>About Page</h1>
-            <p>
+        <div className='container'>
+            <h1 className='title'>About Page</h1>
+            <p className='description'>
                 Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
                 Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
                 mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non

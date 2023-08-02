@@ -11,10 +11,10 @@ function Navigation({ currentPage, handlePageChange }) {
                 <li className="nav-item">
                     <a
                         href="#about-me"
-                        onClick={() => handlePageChange('About Me')}
+                        onClick={() => handlePageChange('AboutMe')}
                         // This is a conditional (ternary) operator that checks to see if the current page is "About Me"
                         // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-                        className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
                     >
                         About Me
                     </a>

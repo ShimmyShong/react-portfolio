@@ -2,7 +2,7 @@ import React from 'react'
 import StackIcon from '../images/768px-Stack_Overflow_icon.svg.png'
 import GitIcon from '../images/github-mark.png'
 import LinkedIcon from '../images/LI-In-Bug.png'
-import '../styles/Icon.css'
+import '../styles/Footer.css'
 
 
 export default function Footer() {
