@@ -1,23 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/Body.css'
 
 export default function Contact() {
+    const [inputEmail, setInputEmail] = useState('')
+    const [emailError, setEmailError] = useState('')
+    const [inputMessage, setInputMessage] = useState('')
+    const [messageError, setMessageError] = useState('')
+
+    function emailValidate() {
+        const emailRegEx = /^([A-Za-z]|[0-9])+$/
+
+        if (!inputEmail.match(emailRegEx)) {
+            setEmailError('')
+            return
+        } else {
+            setEmailError('This Email is not valid')
+        }
+    }
+
+    function messageValidate() {
+        if (inputMessage.trim().length === 0) {
+            setMessageError('You must enter a message')
+            console.log('error hit')
+            return
+        } else {
+            setMessageError('')
+            console.log('else hit')
+        }
+    }
+
+
     return (
         <div className='container'>
             <h1 className='title'>Contact Page</h1>
-            <p className='description'>
-                Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-                molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-                magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-                efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-                mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-                posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-                faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-                ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-                dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-                rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-            </p>
+            <div className='contact-form'>
+                <div className='form-field'>
+                    <label htmlFor='name'>Name:</label>
+                    <input type='text' id='name' name='name' />
+                </div>
+                <div className='form-field'>
+                    <label htmlFor='email'>Email:</label>
+                    <input value={inputEmail} onChange={(e) => setInputEmail(e.target.value)} onBlur={emailValidate} type='email' id='email' name='email' />
+                    <h2 className='description'>{emailError}</h2>
+                </div>
+                <div className='form-field'>
+                    <label htmlFor='message'>Message:</label>
+                    <textarea value={inputMessage} onChange={(e) => setInputMessage(e.target.value)} onBlur={messageValidate} id='message' name='message' rows='5'></textarea>
+                    <h2 className='description'>{messageError}</h2>
+                </div>
+                <button type='submit'>Submit</button>
+            </div>
         </div>
     );
 }
