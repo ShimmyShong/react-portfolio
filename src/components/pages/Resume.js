@@ -1,22 +1,45 @@
-import React from 'react';
-import '../../styles/Body.css'
-
 export default function Resume() {
+    const frontendProficiencies = [
+        'HTML',
+        'CSS',
+        'JavaScript (ES6+)',
+        'React',
+        'Redux',
+        'Bootstrap',
+        'Styled Components',
+    ];
+
+    const backendProficiencies = [
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'RESTful APIs',
+        'Authentication (JWT)',
+    ];
+
     return (
         <div className='container'>
             <h1 className='title'>Resume</h1>
-            <p className='description'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-                velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-                ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-                non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-                ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-                rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-                tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-                porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-                vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-                fames ac ante ipsum primis in faucibus.
-            </p>
+            <h2 className='description'>
+                Download my{' '}
+                <a href='https://mail.google.com/mail/u/6?ui=2&ik=8f13ad0ca7&attid=0.1&permmsgid=msg-f:1766816820942298286&th=1884fe89a3735cae&view=att&disp=inline'>Resume</a>
+            </h2>
+            <div className='proficiencies'>
+                <h3>Frontend Proficiencies:</h3>
+                <ul>
+                    {frontendProficiencies.map((skill, index) => (
+                        <li className='bullet' key={index}>{skill}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className='proficiencies'>
+                <h3>Backend Proficiencies:</h3>
+                <ul>
+                    {backendProficiencies.map((skill, index) => (
+                        <li className='bullet' key={index}>{skill}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }

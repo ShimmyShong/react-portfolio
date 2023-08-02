@@ -8,9 +8,15 @@ import '../styles/Footer.css'
 export default function Footer() {
     return (
         <div className='icon-container'>
-            <img className='icon' src={GitIcon} alt="Github Icon" />
-            <img className='icon' src={StackIcon} alt="Stack Overflow Icon" />
-            <img className='icon' src={LinkedIcon} alt="LinkedIn Icon" />
+            <a href='https://github.com/ShimmyShong'>
+                <img className='icon' src={GitIcon} alt="Github Icon" />
+            </a>
+            <a href='https://stackoverflow.com/users/22328894/shimmyshong'>
+                <img className='icon' src={StackIcon} alt="Stack Overflow Icon" />
+            </a>
+            <a href='https://www.linkedin.com/in/hunter-tran-b32098278/'>
+                <img className='icon' src={LinkedIcon} alt="LinkedIn Icon" />
+            </a>
         </div>
     )
 }
