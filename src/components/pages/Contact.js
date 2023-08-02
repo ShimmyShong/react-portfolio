@@ -21,11 +21,9 @@ export default function Contact() {
     function messageValidate() {
         if (inputMessage.trim().length === 0) {
             setMessageError('You must enter a message')
-            console.log('error hit')
             return
         } else {
             setMessageError('')
-            console.log('else hit')
         }
     }
 

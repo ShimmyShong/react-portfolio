@@ -96,3 +96,60 @@ button {
 button:hover {
   background-color: #dca500;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  min-width: 22vw;
+  min-height: 32vh;
+  border-radius: 10px;
+}
+
+.project-info {
+  display: flex;
+  position: absolute;
+  min-width: 22vw;
+  min-height: 32vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-info a {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
