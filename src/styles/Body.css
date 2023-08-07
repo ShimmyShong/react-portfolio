@@ -112,16 +112,14 @@ button:hover {
 }
 
 .project-img {
-  min-width: 22vw;
-  min-height: 32vh;
+  width: 42rem; 
+  height: 24rem; 
   border-radius: 10px;
 }
 
 .project-info {
   display: flex;
   position: absolute;
-  min-width: 22vw;
-  min-height: 32vh;
   top: 0;
   left: 0;
   right: 0;
@@ -148,8 +146,25 @@ button:hover {
   width: 30px;
   height: 30px;
   margin-top: 5px;
+  background-color: white;
+  border-radius: 100%;
 }
 
 .project:hover .project-info {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .project-img {
+    width: 100%;
+    height: auto;
+    max-width: 21rem;
+    max-height: 12rem;
+  }
+
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
 }
