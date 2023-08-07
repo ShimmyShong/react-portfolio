@@ -1,4 +1,7 @@
-# E-Commerce Backend [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# React Portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![chrome_N3fEs6NRE1](https://github.com/ShimmyShong/react-portfolio/assets/123122824/bdc08aa4-94a4-430d-bcd7-fa47a99771bf)
+
 
 ## Description
 This is a portfolio I created by using React. After using more traditional methods to create websites for so long, I seriously feel like React is a breath of fresh air in terms of how to connect several different pieces together!
