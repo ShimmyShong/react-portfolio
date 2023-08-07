@@ -5,6 +5,9 @@
 
 ## Description
 This is a portfolio I created by using React. After using more traditional methods to create websites for so long, I seriously feel like React is a breath of fresh air in terms of how to connect several different pieces together!
+
+https://shimmyshong.github.io/react-portfolio/
+
 ## Table of Contents
 - [Usage](#usage)
 - [License](#license)
